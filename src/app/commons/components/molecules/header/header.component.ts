@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "myhotel-header",
+  selector: "bcp-header",
   templateUrl: "./header.component.html",
   styleUrls: ["./header.component.scss"],
 })

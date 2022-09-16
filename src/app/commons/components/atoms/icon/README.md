@@ -1,15 +1,15 @@
-# Myhotel icon Component
+# BCP icon Component
 
 ## Usage
 
 ```html
-<myhotel-icon
+<bcp-icon
   name="icon name"
   color="color name"
   size="number"
   type="default | outlined | round | sharp | two-tone"
   mode="default | button"
-></myhotel-icon>
+></bcp-icon>
 ```
 
 <!-- Use icons from:

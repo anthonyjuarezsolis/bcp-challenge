@@ -2,7 +2,7 @@ import { Component, Input, OnInit, OnChanges } from "@angular/core";
 import { I_IconMode, I_IconType } from "./icon.interface";
 
 @Component({
-  selector: "myhotel-icon",
+  selector: "bcp-icon",
   templateUrl: "./icon.component.html",
   styleUrls: ["./icon.component.scss"],
 })
@@ -17,17 +17,17 @@ export class IconComponent implements OnInit, OnChanges {
 
   ngOnInit() {
     this.classes = [
-      "myhotel-icon-material",
-      "myhotel-icon-material--" + this.type,
-      "myhotel-icon-material__mode-" + this.mode,
+      "bcp-icon-material",
+      "bcp-icon-material--" + this.type,
+      "bcp-icon-material__mode-" + this.mode,
     ];
   }
 
   ngOnChanges() {
     this.classes = [
-      "myhotel-icon-material",
-      "myhotel-icon-material--" + this.type,
-      "myhotel-icon-material__mode-" + this.mode,
+      "bcp-icon-material",
+      "bcp-icon-material--" + this.type,
+      "bcp-icon-material__mode-" + this.mode,
     ];
   }
 }

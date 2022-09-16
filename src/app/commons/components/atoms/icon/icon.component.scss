@@ -3,7 +3,7 @@
   display: table;
 }
 
-.myhotel-icon-material {
+.bcp-icon-material {
   font-family: "Material Icons";
   width: 100%;
   height: 100%;
@@ -27,7 +27,7 @@
   }
 
   &--default {
-    @extend .myhotel-icon-material;
+    @extend .bcp-icon-material;
   }
 
   &__mode {

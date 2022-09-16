@@ -1,4 +1,4 @@
-# Myhotel Challenge
+# BCP Challenge
 
 El proyecto corre sobre Angular versión 13.3.0.
 
@@ -14,9 +14,7 @@ y respecto a la parte de su Grid system agrega margenes y paddings que hace difi
 
 He creado algunos SCSS reutilizables como utilitarios, breakpoints, etc que podran encontrar en la carpeta commons, eso con el fin de hacer menos lineas de codigo y poder reutilizarlo en cada vista que sea necesaria.
 
-Para la parte del CRUD decidi usar Firebase por su facilidad de uso, algo que me gusta es que nos permite tener cambios en tiempo real (WebSockets).
-
-Para finalizar solo comentar que todo es responsive, use una libreria externa para la parte de iconos animados, espero que les agrade mi proyecto y el 😺, saludos~!.
+Para finalizar solo comentar que todo es responsive, use una libreria externa para la parte de iconos animados, espero que les agrade mi proyecto y el icon Cuy, saludos~!.
 
 ## Run Project:
 
@@ -32,11 +30,10 @@ Para este proyecto se uso:
 - `Angular 13+`
 - `Angular Material`
 - `Reactive forms`
-- `Firebase | Firestore`
 
-## Live Preview:
+<!-- ## Live Preview: -->
 
-El proyecto se encuentra desplegado en el siguiente link: [Github Pages](https://anthonyjuarezsolis.github.io/myhotel-challenge).
+<!-- El proyecto se encuentra desplegado en el siguiente link: [Github Pages](https://anthonyjuarezsolis.github.io/bcp-challenge). -->
 
 ## By:
 

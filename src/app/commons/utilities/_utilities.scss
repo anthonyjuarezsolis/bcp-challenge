@@ -3,19 +3,19 @@
 
 // placeholder
 
-%myhotel-truncate {
+%bcp-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.myhotel-truncate {
+.bcp-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-@mixin myhotel-truncate-lines($size) {
+@mixin bcp-truncate-lines($size) {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $size;
@@ -24,37 +24,43 @@
 
 // Mixin
 
-@mixin myhotel-flexbox-center() {
+@mixin bcp-flexbox-center() {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin myhotel-flexbox-start() {
+@mixin bcp-flexbox-start() {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-@mixin myhotel-flexbox-space-between() {
+@mixin bcp-flexbox-end() {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin bcp-flexbox-space-between() {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-@mixin myhotel-flexbox-space-around() {
+@mixin bcp-flexbox-space-around() {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-@mixin myhotel-flexbox-param($display, $align, $justify) {
+@mixin bcp-flexbox-param($display, $align, $justify) {
   display: $display;
   align-items: $align;
   justify-content: $justify;
 }
 
-@mixin myhotel-font-details($size, $line-h, $weight, $color) {
+@mixin bcp-font-details($size, $line-h, $weight, $color) {
   font-size: $size;
   line-height: $line-h;
   font-weight: $weight;

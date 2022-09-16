@@ -5,7 +5,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 
 import { MaterialModule } from "../material/material.module";
-import { MyHotelComponents } from "./components";
+import { BcpComponents } from "./components";
 import { ModalsComponents } from "./modals";
 
 @NgModule({
@@ -18,7 +18,7 @@ import { ModalsComponents } from "./modals";
     ReactiveFormsModule,
     MaterialModule,
   ],
-  declarations: [...MyHotelComponents, ...ModalsComponents],
+  declarations: [...BcpComponents, ...ModalsComponents],
   exports: [
     CommonModule,
     HttpClientModule,
@@ -26,10 +26,10 @@ import { ModalsComponents } from "./modals";
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
-    ...MyHotelComponents,
+    ...BcpComponents,
     ...ModalsComponents,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
 })
-export class MyHotelCommonsModule {}
+export class BcpCommonsModule {}

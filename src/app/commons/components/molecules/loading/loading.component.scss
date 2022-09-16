@@ -1,0 +1,19 @@
+@use "/src/app/commons/base/colors" as colors;
+@use "/src/app/commons/utilities/utilities" as utilities;
+@use "/src/app/commons/base/breakpoints" as breakpoints;
+
+.loading {
+  width: auto;
+  height: 100vh;
+  background: colors.$text-01;
+  @include utilities.bcp-flexbox-center();
+  flex-direction: column;
+  gap: 15px;
+
+  &__logo {
+    height: 40px;
+    @include breakpoints.medium {
+      height: 28px;
+    }
+  }
+}

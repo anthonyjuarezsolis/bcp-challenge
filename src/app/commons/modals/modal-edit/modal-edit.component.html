@@ -1,84 +1,100 @@
-<div class="myhotel-modal">
-  <div class="myhotel-modal__edit">
-    <div class="myhotel-modal__content">
-      <div class="myhotel-modal__header">
-        <div class="myhotel-modal__action" (click)="onCloseModal()">
-          <myhotel-icon name="close" color="gray50" size="24"> </myhotel-icon>
+<div class="bcp-modal">
+  <div class="bcp-modal__edit">
+    <div class="bcp-modal__content">
+      <div class="bcp-modal__header">
+        <div class="bcp-modal__action" (click)="onCloseModal()">
+          <bcp-icon name="close" color="#9fa4ae" size="24"> </bcp-icon>
         </div>
       </div>
 
-      <div class="myhotel-modal__body">
-        <h2 class="myhotel-modal__title">{{ data?.title }}</h2>
-        <form [formGroup]="form" class="myhotel-modal__form" autocomplete="off">
+      <div class="bcp-modal__body">
+        <h2 class="bcp-modal__title">{{ data?.title }}</h2>
+        <form [formGroup]="form" class="bcp-modal__form" autocomplete="off">
           <mat-form-field appearance="outline">
-            <mat-label>Nombre: </mat-label>
-
+            <mat-label>Agencia: </mat-label>
             <input
-              placeholder="Ejemplo: A3-100"
-              formControlName="name"
+              placeholder="Ingrese información"
+              formControlName="agencia"
               matInput
             />
-
-            <mat-error *ngIf="formError['name'].errors">
+            <mat-error *ngIf="formError['agencia'].errors">
               {{ messageRequiredItem }}</mat-error
             >
           </mat-form-field>
 
           <mat-form-field appearance="outline">
-            <mat-label>Piso: </mat-label>
-            <input placeholder="Piso 09" formControlName="flat" matInput />
-            <mat-error *ngIf="formError['flat'].errors">
-              {{ messageRequiredItem }}</mat-error
-            >
-          </mat-form-field>
-
-          <mat-form-field class="myhotel-modal__textarea" appearance="outline">
-            <mat-label>Descripción: </mat-label>
-            <textarea formControlName="description" matInput></textarea>
-          </mat-form-field>
-
-          <mat-form-field appearance="outline">
-            <mat-label>Nro de camas: </mat-label>
-            <input formControlName="beds" type="number" matInput />
-            <mat-error *ngIf="formError['beds'].errors">
+            <mat-label>Departamento: </mat-label>
+            <input
+              placeholder="Ingrese información"
+              formControlName="departamento"
+              matInput
+            />
+            <mat-error *ngIf="formError['departamento'].errors">
               {{ messageRequiredItem }}</mat-error
             >
           </mat-form-field>
 
           <mat-form-field appearance="outline">
-            <mat-label>Rango de precio</mat-label>
-            <mat-select formControlName="price">
-              <mat-option value="green">
-                <div class="myhotel-modal__option">
-                  <div
-                    class="myhotel-modal__status myhotel-modal__status--green"
-                  ></div>
-                  < $300
-                </div>
-              </mat-option>
-              <mat-option value="yellow">
-                <div class="myhotel-modal__option">
-                  <div
-                    class="myhotel-modal__status myhotel-modal__status--yellow"
-                  ></div>
-                  $301 - $999
-                </div></mat-option
-              >
-              <mat-option value="red">
-                <div class="myhotel-modal__option">
-                  <div
-                    class="myhotel-modal__status myhotel-modal__status--red"
-                  ></div>
-                  > $1000
-                </div></mat-option
-              >
-            </mat-select>
-            <mat-error *ngIf="formError['price'].errors">
+            <mat-label>Provincia: </mat-label>
+            <input
+              placeholder="Ingrese información"
+              formControlName="provincia"
+              matInput
+            />
+            <mat-error *ngIf="formError['provincia'].errors">
               {{ messageRequiredItem }}</mat-error
             >
           </mat-form-field>
 
-          <div class="myhotel-modal__button">
+          <mat-form-field appearance="outline">
+            <mat-label>Distrito: </mat-label>
+            <input
+              placeholder="Ingrese información"
+              formControlName="distrito"
+              matInput
+            />
+            <mat-error *ngIf="formError['distrito'].errors">
+              {{ messageRequiredItem }}</mat-error
+            >
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Dirección: </mat-label>
+            <input
+              placeholder="Ingrese información"
+              formControlName="direccion"
+              matInput
+            />
+            <mat-error *ngIf="formError['direccion'].errors">
+              {{ messageRequiredItem }}</mat-error
+            >
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Latitud: </mat-label>
+            <input
+              placeholder="Ingrese información"
+              formControlName="lat"
+              matInput
+            />
+            <mat-error *ngIf="formError['lat'].errors">
+              {{ messageRequiredItem }}</mat-error
+            >
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Longitud: </mat-label>
+            <input
+              placeholder="Ingrese información"
+              formControlName="lon"
+              matInput
+            />
+            <mat-error *ngIf="formError['lon'].errors">
+              {{ messageRequiredItem }}</mat-error
+            >
+          </mat-form-field>
+
+          <div class="bcp-modal__button">
             <button mat-flat-button color="warn" (click)="updateElement()">
               Guardar
             </button>

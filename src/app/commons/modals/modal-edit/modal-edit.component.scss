@@ -2,7 +2,7 @@
 @use "/src/app/commons/utilities/utilities" as utilities;
 @use "/src/app/commons/base/breakpoints" as breakpoints;
 
-.myhotel-modal {
+.bcp-modal {
   &__edit {
     max-width: 489px;
   }
@@ -17,7 +17,7 @@
   &__header {
     width: 92%;
     padding: 16px 16px 20px;
-    @include utilities.myhotel-flexbox-param(flex, center, flex-end);
+    @include utilities.bcp-flexbox-param(flex, center, flex-end);
 
     @include breakpoints.medium {
       width: 88%;
@@ -26,7 +26,7 @@
 
   &__action {
     cursor: pointer;
-    @include utilities.myhotel-flexbox-param(flex, center, center);
+    @include utilities.bcp-flexbox-param(flex, center, center);
   }
 
   &__body {
@@ -44,7 +44,7 @@
 
   &__option {
     gap: 20px;
-    @include utilities.myhotel-flexbox-param(flex, center, flex-start);
+    @include utilities.bcp-flexbox-param(flex, center, flex-start);
   }
 
   &__status {
@@ -70,10 +70,12 @@
     margin-bottom: 10px;
     letter-spacing: 0.246055px;
     text-align: center;
-    @include utilities.myhotel-font-details(24px, 32px, 600, colors.$text-01);
+    @include utilities.bcp-font-details(24px, 32px, 600, colors.$primary);
 
     @include breakpoints.small {
       max-width: 100%;
+      @include utilities.bcp-font-details(20px, 22px, 600, colors.$primary);
+      margin-bottom: 20px;
     }
   }
 
@@ -82,12 +84,18 @@
     width: 100%;
     margin-top: 10px;
     margin-bottom: 40px;
-    @include utilities.myhotel-flexbox-param(flex, center, center);
+    @include utilities.bcp-flexbox-param(flex, center, center);
 
     @include breakpoints.small {
       padding: 12px 0;
       width: 100%;
       max-width: 100%;
+    }
+
+    button {
+      width: 142px;
+      height: 40px;
+      border-radius: 20px;
     }
   }
 }
