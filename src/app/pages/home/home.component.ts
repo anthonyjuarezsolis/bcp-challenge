@@ -59,8 +59,12 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  public goToLink(lat: string, lon: string) {
-    let url = "";
+  public goToLink(lat, lon) {
+    let url =
+      "https://www.google.com/maps/search/?api=1&query=" +
+      lon.toString() +
+      "," +
+      lat.toString();
     window.open(url, "_blank");
   }
 }

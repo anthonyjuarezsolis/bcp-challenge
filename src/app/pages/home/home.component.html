@@ -35,6 +35,14 @@
                 mode="button"
                 (click)="onModalEdit(item, i)"
               ></bcp-icon>
+              <bcp-icon
+                (click)="goToLink(item?.lat, item?.lon)"
+                name="map"
+                color="#ff7800"
+                size="24"
+                type="outlined"
+                mode="button"
+              ></bcp-icon>
             </div>
           </div>
 
