@@ -58,4 +58,9 @@ export class HomeComponent implements OnInit {
       },
     });
   }
+
+  public goToLink(lat: string, lon: string) {
+    let url = "";
+    window.open(url, "_blank");
+  }
 }
