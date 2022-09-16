@@ -31,9 +31,9 @@ Para este proyecto se uso:
 - `Angular Material`
 - `Reactive forms`
 
-<!-- ## Live Preview: -->
+## Live Preview:
 
-<!-- El proyecto se encuentra desplegado en el siguiente link: [Github Pages](https://anthonyjuarezsolis.github.io/bcp-challenge). -->
+El proyecto se encuentra desplegado en el siguiente link: [Github Pages](https://anthonyjuarezsolis.github.io/bcp-challenge).
 
 ## By:
 
